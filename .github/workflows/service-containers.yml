@@ -2,7 +2,8 @@ name: service-containers
 on:
   push:
     branches:
-      - "main"
+      - 'main'
+      - 'master'
 jobs:
   container-job:
     runs-on: ubuntu-latest
@@ -23,6 +24,6 @@ jobs:
       - name: Install psql client
         run: apt-get -y update && apt-get -y install postgresql-client
       - name: Connect to PostgreSQL
-        env: 
+        env:
           PGPASSWORD: ${{ env.DATABASE_PASSWORD }}
         run: psql -U ${{ env.DATABASE_USER }} -d ${{ env.DATABASE_NAME }} -h postgres -c 'select * from information_schema.tables;'
