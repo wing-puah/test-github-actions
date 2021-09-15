@@ -1,0 +1,9 @@
+name: scheduled
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo This job runs every 5 minutes
