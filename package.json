@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/wing-puah/test-github-actions/issues"
   },
-  "homepage": "https://github.com/wing-puah/test-github-actions#readme"
+  "homepage": "https://github.com/wing-puah/test-github-actions#readme",
+  "dependencies": {
+    "striptags": "^3.1.1"
+  }
 }
