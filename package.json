@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/wing-puah/test-github-actions#readme",
   "dependencies": {
+    "colors-cli": "^1.0.28",
     "striptags": "^3.2.0"
   }
 }
